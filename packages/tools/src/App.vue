@@ -1,13 +1,18 @@
 <template>
   <div id="app">
     <router-view/>
+    <parse-token/>
   </div>
 </template>
 
 <script>
+import ParseToken from './views/develop/components/token.vue';
 
 export default {
   name: 'App',
+  components: {
+  ParseToken,
+  }
 }
 </script>
 

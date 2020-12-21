@@ -14,34 +14,34 @@
   </div>
 </template>
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
+import { Component, Vue } from "vue-property-decorator";
 
-import { Button } from 'ant-design-vue';
+import { Button } from "ant-design-vue";
 
-import { parseToken } from '../utils/index';
+import { parseToken } from "./utils";
 
 @Component({
   name: "tools",
   components: {
     AButton: Button,
-    AButtonGroup: Button.Group,
+    AButtonGroup: Button.Group
   }
 })
 export default class ComponentName extends Vue {
-  token: string = '';
-  parsedToken: any = '';
+  token = "";
+  parsedToken = "";
 
   parseToken() {
     try {
       this.parsedToken = parseToken(this.token);
     } catch (error) {
-      this.parsedToken = '非法Token，请检查！'
+      this.parsedToken = "非法Token，请检查！";
     }
   }
 
   clear() {
-    this.token = '';
-    this.parsedToken = '';
+    this.token = "";
+    this.parsedToken = "";
   }
 }
 </script>

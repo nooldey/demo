@@ -50,7 +50,9 @@ export default class ComponentName extends Vue {
   margin-bottom: 15px;
   .token {
     display: flex;
+    justify-content: center;
     height: 100%;
+    text-align: left;
   }
   textarea {
     display: block;
@@ -63,11 +65,12 @@ export default class ComponentName extends Vue {
     flex: 1;
     margin-left: 15px;
     padding: 8px;
-    width: 500px;
+    max-width: 500px;
+    min-height: 300px;
     height: 100%;
     border: 1px solid #eee;
     border-radius: 3px;
-    background-color: #efefef;
+    background-color: #fcfcfc;
   }
 }
 </style>

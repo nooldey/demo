@@ -9,6 +9,4 @@ function parseToken(token: string): any | null {
   return useInfo;
 }
 
-export {
-  parseToken,
-};
+export { parseToken };
